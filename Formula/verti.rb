@@ -5,21 +5,21 @@
 class Verti < Formula
   desc "Versioned artifacts for Git repositories"
   homepage "https://github.com/ruinivist/verti"
-  version "0.2.2"
+  version "0.2.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ruinivist/verti/releases/download/v0.2.2/verti_0.2.2_darwin_amd64.tar.gz"
-      sha256 "50d51a09a67ddb92085d9a9d924ebef6fda531d3fe2ef084582c6de47a109e93"
+      url "https://github.com/ruinivist/verti/releases/download/v0.2.3/verti_0.2.3_darwin_amd64.tar.gz"
+      sha256 "3de81732ec7b311e808ec61fd567d7dfd2f10f51ecb210e2e5d536cad092269d"
 
       define_method(:install) do
         bin.install "verti"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ruinivist/verti/releases/download/v0.2.2/verti_0.2.2_darwin_arm64.tar.gz"
-      sha256 "07a3438280c38a0c4f4e017832c547849ed7396e9ac2ccfc23294567beffd2c5"
+      url "https://github.com/ruinivist/verti/releases/download/v0.2.3/verti_0.2.3_darwin_arm64.tar.gz"
+      sha256 "ca4fcacf558cf8b5bf0a84057fc19c1741faf83cba9f32e7d71c33d822be2f2d"
 
       define_method(:install) do
         bin.install "verti"
@@ -29,15 +29,15 @@ class Verti < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ruinivist/verti/releases/download/v0.2.2/verti_0.2.2_linux_amd64.tar.gz"
-      sha256 "e0efb51ad468a28e4ed26d3c964a7fba198a49a97d2f0b3f17b2c0c5e96b86b7"
+      url "https://github.com/ruinivist/verti/releases/download/v0.2.3/verti_0.2.3_linux_amd64.tar.gz"
+      sha256 "596f4528989837b333e11c4fa5f3bf81a7f4d7a764cdc085ae6420c4c7413acd"
       define_method(:install) do
         bin.install "verti"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ruinivist/verti/releases/download/v0.2.2/verti_0.2.2_linux_arm64.tar.gz"
-      sha256 "c6837fb79d455918ad92b23e89821e35fa5ccd964ea98def22108428ae87fffd"
+      url "https://github.com/ruinivist/verti/releases/download/v0.2.3/verti_0.2.3_linux_arm64.tar.gz"
+      sha256 "4afc095eb20e67937170ea6b2e9a739007651cb2f3d44f377d60ce2df94ab482"
       define_method(:install) do
         bin.install "verti"
       end
